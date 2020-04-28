@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import Webcam from 'react-webcam';
 import Tesseract from 'tesseract.js';
 
@@ -91,6 +91,8 @@ const App: React.FC = () => {
         style={{
           display: 'flex',
           flex: 1,
+          flexDirection: 'column',
+          alignItems: 'center'
         }}
       >
         <div
@@ -135,8 +137,8 @@ const App: React.FC = () => {
         </div>
         <div
           style={{
-            display: 'flex',
-            flex: 1,
+            width: '100%',
+            height: 200,
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: '#EFEFEF'
